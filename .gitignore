@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Secrets
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model checkpoints (optional if they're large or you want users to train/download)
+spam_detection_model/spam_model/
+spam_detection_model/model
+
+
+# VS Code/JetBrains
+.vscode/
+.idea/
+/spam_detection_model/model/
