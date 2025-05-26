@@ -33,12 +33,29 @@ A web app that extracts comments from YouTube videos, detects spam, analyzes sen
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+git clone https://github.com/your-username/your-repo-name.git
 ```
 
-### 2. Set up API keys in .env
+### 2. Install requirements.txt
+
+### 3. Set up API keys in .env
 
 The app depends on 2 API keys, OPENROUTER_API_KEY and YOUTUBE_API_KEY. You need to make your own API keys, they are free and can be done here:
 - Youtube API V3: https://developers.google.com/youtube/v3/getting-started
 - OpenRouter API: https://openrouter.ai/docs/api-reference/authentication
+  
+Follow the instructions there to create an account, and create your own keys.
+
+Then, create a .env file in the root of the project.
+```plaintext
+OPENROUTER_API_KEY = YOUR_KEY
+YOUTUBE_API_KEY = YOUR_KEY
+```
+Make sure to add the .env file to the .gitignore!
+
+### 4. To run the app, simply run this in your terminal within the directory of the project
+
+```bash
+streamlit run app_better.py
+```
