@@ -24,6 +24,7 @@ A web app that extracts comments from YouTube videos, detects spam, analyzes sen
 ## Notes
 
 - The locally trained transformer model is fetched from a HuggingFace repository here: https://huggingface.co/Sishdoap/spam-detector-transformer/tree/main
+- The app uses a beta version of PyTorch, version 2.8.0 with CUDA 12.8 support. Within the requirements, I have listed it as PyTorch version 2.7.0. This should work for the majority of machines. If you have any issues, try installing PyTorch via pip with this: pip install --pre torch --index-url https://download.pytorch.org/whl/nightly/cu128
 
 ---
 
